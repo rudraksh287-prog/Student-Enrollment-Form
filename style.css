@@ -1,0 +1,13 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.container {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form {
+    max-width: 100%;
+}
