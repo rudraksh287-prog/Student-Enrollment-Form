@@ -1,86 +1,69 @@
 # Student Enrollment Form
 
-## Overview
+## Description
 
-The Student Enrollment Form is a micro-project developed using Bootstrap 5 and JSONPowerDB (JPDB). The application allows users to store, retrieve, and update student records in the STUDENT-TABLE relation of the SCHOOL-DB database.
+Student Enrollment Form is a micro-project developed using Bootstrap 5 and JSONPowerDB (JPDB). The application allows users to add, retrieve, and update student records stored in the STUDENT-TABLE relation of the SCHOOL-DB database.
 
-The project follows a primary-key-based workflow where the Roll Number uniquely identifies each student record. Based on whether the Roll Number exists in the database, the form automatically switches between Save and Update modes.
+The form uses Roll-No as the primary key. Based on whether the entered Roll-No exists in the database, the system automatically enables Save or Update functionality.
 
----
+## Table of Contents
 
-## Tech Stack
+* Description
+* Benefits of JsonPowerDB
+* Scope of Functionalities
+* Examples of Use
+* Release History
 
-* HTML5
-* CSS3
-* JavaScript
-* Bootstrap 5
-* JSONPowerDB (JPDB)
+## Benefits of JsonPowerDB
 
----
+* Simple and fast REST API-based database.
+* High-performance NoSQL database with JSON document storage.
+* Serverless architecture with direct frontend integration.
+* Easy CRUD operations without complex backend setup.
+* Lightweight and suitable for small to medium-scale applications.
+* Minimal development and deployment overhead.
 
-## Database Details
+## Scope of Functionalities
 
-**Database Name:** SCHOOL-DB
+* Student record management.
+* Primary key validation using Roll-No.
+* Automatic retrieval of existing records.
+* Save new student records.
+* Update existing student records.
+* Reset form to default state.
+* Input validation to prevent empty fields.
 
-**Relation Name:** STUDENT-TABLE
+## Examples of Use
 
-### Fields
+### Adding a New Student
 
-* Roll-No (Primary Key)
-* Full-Name
-* Class
-* Birth-Date
-* Address
-* Enrollment-Date
+1. Enter a new Roll-No.
+2. Fill in all required details.
+3. Click Save.
+4. Record is stored in the database.
 
----
-
-## Features
-
-* Primary key validation using Roll-No
-* Automatic record retrieval for existing entries
-* Save functionality for new records
-* Update functionality for existing records
-* Form reset functionality
-* Input validation to prevent empty fields
-* Automatic enabling and disabling of fields and buttons
-* Direct integration with JSONPowerDB
-
----
-
-## Workflow
-
-### New Record
-
-1. Enter a Roll-No.
-2. If the Roll-No does not exist, remaining fields become active.
-3. Fill in the details and click **Save**.
-4. The record is stored in the database and the form resets.
-
-### Existing Record
+### Updating an Existing Student
 
 1. Enter an existing Roll-No.
-2. The record is fetched automatically.
-3. Modify the required fields and click **Update**.
-4. The updated information is saved and the form resets.
+2. Student details are fetched automatically.
+3. Modify required fields.
+4. Click Update.
+5. Changes are saved successfully.
 
----
+## Release History
 
-## Project Structure
+### v1.0.0
 
-```text
-Student-Enrollment-Form/
-│
-├── index.html
-├── style.css
-├── script.js
-└── README.md
-```
+* Created Student Enrollment Form.
+* Integrated JSONPowerDB database connectivity.
+* Implemented Save, Update, and Reset operations.
+* Added primary key validation and record retrieval.
+* Added form validation and automated field management.
 
----
+## Project Status
 
-## Version
+Completed and submitted as a Micro Project demonstrating CRUD operations using JsonPowerDB.
 
-**v1.0.0**
+## Author
 
-Student Enrollment Form with CRUD operations using JSONPowerDB and automated form state management.
+Rudraksh Gupta
